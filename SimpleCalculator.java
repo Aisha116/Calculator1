@@ -16,7 +16,13 @@ public class SimpleCalculator {
         return operand_1 / operand_2;
     }
 
-   
+    float square(float operand_1) {
+        return operand_1 * operand_1;
+    }
+
+    float cube(float operand_1) {
+        return operand_1 * operand_1 * operand_1;
+    }
 
     public static void main(String args[]) {
         float operand_1 = 10;
@@ -35,6 +41,10 @@ public class SimpleCalculator {
         float div_result = calc.division(operand_1, operand_2);
         System.out.println("Result of Division is :" + div_result);
 
-        
+        float sqr_result = calc.square(operand_1);
+        System.out.println("Result of Sqaure is :" + sqr_result);
+
+        float cube_result = calc.cube(operand_1);
+        System.out.println("Result of Cube is :" + cube_result);
     }
 }
